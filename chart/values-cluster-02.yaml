@@ -1,11 +1,11 @@
 cluster:
-  name: cluster-argocd-01
+  name: cluster-argocd-02
   masterNodes: 1
-  workerNodes: 2
+  workerNodes: 1
   version: v1.24.0
 azure:
   location: eastasia
   clusterIdentity: cluster-identity
   subscriptionID: 7a0440e3-e49c-4322-a71e-4eb425c34f6c
-  vmSize: Standard_B2s
+  vmSize: Standard_DS1_v2
   sshPublicKey: ""

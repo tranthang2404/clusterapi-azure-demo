@@ -144,7 +144,7 @@ spec:
       osDisk:
         diskSizeGB: 128
         osType: Linux
-      sshPublicKey: {{ .Values.azure.sshPublicKey }}
+      sshPublicKey: "{{ .Values.azure.sshPublicKey }}"
       vmSize: {{ .Values.azure.vmSize }}
 ---
 apiVersion: cluster.x-k8s.io/v1beta1
@@ -182,7 +182,7 @@ spec:
       osDisk:
         diskSizeGB: 128
         osType: Linux
-      sshPublicKey: {{ .Values.azure.sshPublicKey }}
+      sshPublicKey: "{{ .Values.azure.sshPublicKey }}"
       vmSize: {{ .Values.azure.vmSize }}
 ---
 apiVersion: bootstrap.cluster.x-k8s.io/v1beta1
